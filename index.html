@@ -520,6 +520,40 @@
     .wpp-fixo{right:16px;bottom:16px;width:58px;height:58px}
     footer{padding-bottom:96px}
   }
+  /* ===== revisão celular 360px ===== */
+  @media (max-width:1180px){
+    .nav{position:sticky;top:0}
+    html{scroll-padding-top:88px}
+  }
+  @media (max-width:560px){
+    .secao{padding:64px 0}
+    /* topo: foto e nome menores para o botão de agendar caber na primeira tela */
+    .nome{font-size:clamp(3.6rem,18vw,4.6rem)}
+    .hero-foto{width:min(62%,280px);margin-top:-.8em}
+    .hero-palco{padding-top:10px}
+    .hero-texto{padding:16px 0 56px}
+    .hero-info,.gc-txt,.endereco small,.rod-end small,.fala span,.nota-google div>span:not(.estrelas){font-size:.9375rem}
+    .hero h1{font-size:clamp(1.45rem,6.6vw,1.6rem);margin-bottom:12px}
+    .hero .lead{font-size:1rem;line-height:1.6;margin-bottom:20px}
+    /* textos com no mínimo 15–16px */
+    .marca-txt>span,.rod .marca>span{font-size:.8125rem}
+    .dor li span,.horarios li,.depo blockquote p,.depo blockquote:first-child p{font-size:1rem}
+    footer,.rod p,.rod ul a,.rod-info li{font-size:.9375rem}
+    .depo cite{font-size:.9375rem}
+    /* bloco da nota 5,0 */
+    .nota-google{width:100%;padding:16px 18px;gap:16px}
+    .nota-google strong{font-size:2.3rem}
+    .nota-google .ver{justify-content:flex-start;white-space:nowrap}
+    .nota-google .ver,.nota-google div>span.ver{font-size:.875rem}
+    /* endereço e botão da foto do consultório */
+    .endereco{margin-left:0;margin-right:0;padding:14px 0}
+    .fala .btn{padding:15px 14px;gap:10px;font-size:.95rem;white-space:nowrap}
+    .btn-google{font-size:.95rem;padding:16px 18px}
+  }
+  @media (max-width:350px){
+    .nota-google{gap:12px;padding:14px}
+    .nota-google strong{font-size:2rem}
+  }
 </style>
 </head>
 <body>
@@ -588,10 +622,10 @@
         <p class="lead">Muita gente chega ao meu consultório sem saber explicar o que sente. Não tem problema, a primeira conversa serve justamente para isso.</p>
       </div>
       <ul class="rv">
-        <li><img class="img-rv" src="assets/dor-1.webp" alt="Mulher cansada com as mãos na cabeça diante da mesa de trabalho" width="360" height="360"><div><b>01</b><span>Você faz tudo o que precisa, mas sente que está vivendo no automático.</span></div></li>
-        <li><img class="img-rv" src="assets/dor-2.webp" alt="Pessoa acordada na cama com o relógio marcando 3h24 da madrugada" width="360" height="360"><div><b>02</b><span>A cabeça não desliga, nem na hora de dormir.</span></div></li>
-        <li><img class="img-rv" src="assets/dor-3.webp" alt="Mulher de costas diante de setas apontando para várias direções" width="360" height="360"><div><b>03</b><span>Você adia decisões importantes porque nada parece a escolha certa.</span></div></li>
-        <li><img class="img-rv" src="assets/dor-4.webp" alt="Pai preocupado com contas na mesa da cozinha enquanto a família janta" width="360" height="360"><div><b>04</b><span>Trabalho, família e relacionamento estão pesando mais do que deveriam.</span></div></li>
+        <li><img loading="lazy" decoding="async" class="img-rv" src="assets/dor-1.webp" alt="Mulher cansada com as mãos na cabeça diante da mesa de trabalho" width="360" height="360"><div><b>01</b><span>Você faz tudo o que precisa, mas sente que está vivendo no automático.</span></div></li>
+        <li><img loading="lazy" decoding="async" class="img-rv" src="assets/dor-2.webp" alt="Pessoa acordada na cama com o relógio marcando 3h24 da madrugada" width="360" height="360"><div><b>02</b><span>A cabeça não desliga, nem na hora de dormir.</span></div></li>
+        <li><img loading="lazy" decoding="async" class="img-rv" src="assets/dor-3.webp" alt="Mulher de costas diante de setas apontando para várias direções" width="360" height="360"><div><b>03</b><span>Você adia decisões importantes porque nada parece a escolha certa.</span></div></li>
+        <li><img loading="lazy" decoding="async" class="img-rv" src="assets/dor-4.webp" alt="Pai preocupado com contas na mesa da cozinha enquanto a família janta" width="360" height="360"><div><b>04</b><span>Trabalho, família e relacionamento estão pesando mais do que deveriam.</span></div></li>
       </ul>
     </div>
 
@@ -696,15 +730,15 @@
     <div class="depo-grid">
       <blockquote class="rv">
         <div><span class="estrelas" role="img" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg></span><p>A Carla é uma Psicóloga muito profissional, com muita empatia, simpatia e muita responsabilidade! Nos demos bem desde o começo e eu sempre me surpreendi positivamente a cada consulta, conforme ia evoluindo o tratamento!</p><p>Estou muito satisfeita com os resultados que estou obtendo e recomendo o seu trabalho!</p></div>
-        <cite><img class="img-rv" src="assets/monica.webp" alt="Foto de perfil de Mônica Beatriz" width="48" height="48"><span class="cite-txt">Mônica Beatriz<span>Avaliação no Google</span></span></cite>
+        <cite><img loading="lazy" decoding="async" class="img-rv" src="assets/monica.webp" alt="Foto de perfil de Mônica Beatriz" width="48" height="48"><span class="cite-txt">Mônica Beatriz<span>Avaliação no Google</span></span></cite>
       </blockquote>
       <blockquote class="rv">
         <div><span class="estrelas" role="img" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg></span><p>Excelente profissional. Acolhedora, ética e muito competente. Sinto-me sempre ouvida e compreendida, e percebo avanços importantes graças ao seu trabalho.</p><p>Sou muito grata pelo cuidado e pela dedicação. Recomendo com confiança.</p></div>
-        <cite><img class="img-rv" src="assets/barbara.webp" alt="Foto de perfil de Barbara Goularte" width="48" height="48"><span class="cite-txt">Barbara Goularte<span>Avaliação no Google</span></span></cite>
+        <cite><img loading="lazy" decoding="async" class="img-rv" src="assets/barbara.webp" alt="Foto de perfil de Barbara Goularte" width="48" height="48"><span class="cite-txt">Barbara Goularte<span>Avaliação no Google</span></span></cite>
       </blockquote>
       <blockquote class="rv">
         <div><span class="estrelas" role="img" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></svg></span><p>Só tenho a agradecer por toda assistência e profissionalismo, uma pessoa de princípios, confiável, muito contribuiu em minha busca, existe uma Joyce antes e pós Carla.</p><p>Deus continue te abençoando e usando tua vida. Obrigada ❤️</p></div>
-        <cite><img class="img-rv" src="assets/joyce.webp" alt="Foto de perfil de Joyce Borges" width="48" height="48"><span class="cite-txt">Joyce Borges<span>Avaliação no Google</span></span></cite>
+        <cite><img loading="lazy" decoding="async" class="img-rv" src="assets/joyce.webp" alt="Foto de perfil de Joyce Borges" width="48" height="48"><span class="cite-txt">Joyce Borges<span>Avaliação no Google</span></span></cite>
       </blockquote>
     </div>
     <a class="btn btn-ouro btn-google rv" href="https://maps.app.goo.gl/X5FMSZnLrh81XzoA8" target="_blank" rel="noopener"><svg class="g" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.6 12.3c0-.8-.1-1.5-.2-2.3H12v4.3h6a5.1 5.1 0 0 1-2.2 3.4v2.8h3.6c2-1.9 3.2-4.7 3.2-8.2z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.4-2.7l-3.6-2.8c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2v2.9A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.7 14c-.2-.7-.4-1.4-.4-2.1s.1-1.4.4-2.1V7H2a11 11 0 0 0 0 9.9l3.7-2.9z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3.1.6 4.3 1.7l3.2-3.2A11 11 0 0 0 2 7l3.7 2.9C6.6 7.4 9.1 5.4 12 5.4z"/></svg>Ver todas as avaliações no Google</a>
@@ -716,7 +750,7 @@
   <div class="container">
     <div class="retrato-wrap rv">
       <div class="retrato">
-        <img class="img-rv" src="assets/sobre.webp" alt="Psicóloga Carla Peres sorrindo, com a mão apoiada no queixo" width="760" height="956">
+        <img loading="lazy" decoding="async" class="img-rv" src="assets/sobre.webp" alt="Psicóloga Carla Peres sorrindo, com a mão apoiada no queixo" width="760" height="956">
       </div>
     </div>
     <div class="rv">
@@ -735,7 +769,7 @@
       <p class="lead">Fica na Sala 501, um espaço tranquilo para você falar à vontade. Se preferir não sair de casa, a sessão pode ser online.</p>
       <a class="endereco" href="https://maps.app.goo.gl/X5FMSZnLrh81XzoA8" target="_blank" rel="noopener" aria-label="Abrir endereço no Google Maps: Av. Flores da Cunha, 1320 / R. Lindolfo Wagner, 336, Sala 501, Vale do Sol, Cachoeirinha, RS">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-        <span>Av. Flores da Cunha, 1320 · R. Lindolfo Wagner, 336 · Sala 501 · Vale do Sol, Cachoeirinha, RS, <span class="nowrap">94910-002</span><small>Abrir no Google Maps <svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></small></span>
+        <span>Av. Flores da Cunha, 1320<br>R. Lindolfo Wagner, 336 · Sala 501<br>Vale do Sol, Cachoeirinha, RS, <span class="nowrap">94910-002</span><small>Abrir no Google Maps <svg class="ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></small></span>
       </a>
       <ul class="horarios">
         <li><strong>Segunda a sexta</strong><span>08h às 20h</span></li>
@@ -744,7 +778,7 @@
       </ul>
     </div>
     <figure class="local-foto rv">
-      <img class="img-rv" src="assets/consultorio.webp" alt="Psicóloga fazendo anotações em um caderno enquanto escuta uma paciente no consultório" width="800" height="1200">
+      <img loading="lazy" decoding="async" class="img-rv" src="assets/consultorio.webp" alt="Psicóloga fazendo anotações em um caderno enquanto escuta uma paciente no consultório" width="800" height="1200">
       <figcaption class="fala">
         <p>“Estou aqui para te ouvir e te ajudar a dar o próximo passo.”</p>
         <span>Carla Peres, psicóloga</span>
@@ -904,7 +938,7 @@
     entries.forEach(en => en.isIntersecting ? visiveis.add(en.target) : visiveis.delete(en.target));
     fixo.classList.toggle('oculto', visiveis.size > 0);
   });
-  document.querySelectorAll('.js-wpp.btn').forEach(el => ioWpp.observe(el));
+  document.querySelectorAll('.js-wpp.btn, .hero, .nota-google, .btn-google, .faq-lista, footer').forEach(el => ioWpp.observe(el));
 
   // fecha o menu ao tocar fora dele
   document.addEventListener('click', e => {
